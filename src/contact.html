@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr" class="overflow-x-hidden  w-screen min-w-0">
+<head>
+    <title>Devis - Orion colis Express | Transport international  </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orion colis express propose des solutions de transport international rapides et fiables .Demandez un un devis en ligne et suivez vos expeditions en temps réel">
+    <meta name="keywords" content="Transport international, expedition , expedition collis , Express, expedition express, société de transport logistique , marchandise , envoi colis par avion , expedition container , cout transport , devis colis , Orion colis express suivis colis , orion colis express devis">
+    <meta name="author" content="Flore Restauration">
+    <meta name="theme-color" content="#FF2C2C">
+    <meta name="robots" content="index, follow">
+    <!-- je dois ajouter un code de vérification Google ici -->
+    <meta name="google-site-verification" content="">
+    <!-- LIENS DU FAVICONS -->
+    <link rel="icon" href="images/favicon-orion/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="512x512" href="images/favicon-orion/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-orion/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-orion/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- lien pour le css -->
+    <link rel="stylesheet" href="css/output.css">
+
+     <!-- lien des polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+     <!-- lien vers ma page javascript -->
+    <script src="javascript/main.js" defer></script>
+</head>
+<body class=" bg-modeclair dark:bg-gray-900 overflow-hidden w-screen flex flex-col gap-[50px] min-h-full">
+    <header class="bg-white dark:bg-gray-800 py-9 fixed top-0 left-0 z-[1000] w-screen ">
+            <nav class="flex justify-between items-center px-[5%] ">
+                <!-- logo -->
+                <a href="index.html" class="cursor-pointer"> <!--retour a la page d'accueil-->
+                    <h4 class="text-xs sm:text-base font-bold lg:text-2xl text-primary ">Orion <span class="text-blue-500">Colis Express</span></h4>
+                </a>
+                <!-- le grand menu -->
+                <div class="flex items-center gap-1.5 sm:gap-3.5">
+                    <div class=" items-center gap-8 font-light text-[20px] hidden xl:flex dark:text-white">
+                        <!-- je commence par d'abord par les liens de differentes pages qui s'afficheront uniquement sur grand ecran  -->
+                        <a href="index.html" class="hover:text-primary ">Accueil</a>
+                        <a href="service.html" class="hover:text-primary text-primary">Service</a>
+                        <a href="propos.html" class="hover:text-primary" >A-propos</a>
+                        <a href="contact.html" class="hover:text-primary">contact</a>
+                    </div>
+                    <!-- bouton d'appel pour le devis -->
+                    <a href="https://wa.me/237695227374" class="bg-red-500 hover:shadow-lg hover:bg-red-600 px-4 py-2  text-white rounded-[5px] dark:text-black hidden md:block" target="_blank">contactez-nous</a>
+                    <div><!-- ce div gere les themes du sites -->
+                        <span class="mode-sombre flex dark:hidden  hover:backdrop-blur-sm  hover:bg-black/20 rounded-full" onclick="darkmode()">
+                            <!-- mode sombre -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"/></svg>
+                        </span>
+                        <span class="mode-clair hidden  dark:flex hover:backdrop-blur-sm  hover:bg-white/20 rounded-full" onclick="ligthmode()">
+                            <!-- MODE CLAIR -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="26px" fill="#FFFFFF"><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"/></svg>
+                        </span>
+                    </div>
+                    <div class="xl:hidden  "  onclick="showburger()"> <!--les barres menus-->
+                        <span class="menu-burger dark:hidden" >
+                            <!-- la barre de menu en mode claire  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#000000"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                        </span>
+                        <span class="menu-burger hidden dark:flex " >
+                            <!-- la barre de menu en mode sombre -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="29px" viewBox="0 -960 960 960" width="29px" fill="#FFFFFF"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                        </span>
+                    </div>
+                    <!-- fin des grands menu -->
+                </div>
+                <!-- Les liens de mes pages mode responsive -->
+                <div id="sidebar" class="hidden   fixed top-0 left-0 inset-0 h-screen w-screen overflow-hidden   flex-col items-start gap-9.5 z-[998] bg-white backdrop-blur-[10px] dark:bg-black/60 justify-start ">
+                    <span onclick="hidesidebar()" style="padding:4%;">
+                        <span class="false  inline-block dark:hidden "   >
+                            <!-- retour accueil -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg>
+                        </span>
+                        <span class="false hidden  dark:inline-block " >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg>
+                        </span>
+                    </span>
+                    <div class="flex flex-col items-center gap-3.5 justify-center mx-auto dark:text-white">
+                        <a href="index.html" class="
+                        font-light 
+                        text-[20px] 
+                        hover:text-primary 
+                        cursor-pointer">Accueil
+                        </a>
+            
+                        <a href="service.html" class="
+                        font-light 
+                        text-[20px] 
+                        hover:text-primary 
+                        cursor-pointer">Services
+                        </a>
+                        
+                        
+            
+                        <a href="propos.html" class="
+                        font-light 
+                        text-[20px] 
+                        hover:text-primary 
+                        cursor-pointer">A-propos
+                        </a>
+            
+                        <a href="contact.html" class="
+                        font-light 
+                        text-[20px] 
+                        hover:text-primary 
+                        cursor-pointer">contact
+                        </a>
+                        <!-- bouton d'appel pour le contact -->
+                        <a href="https://wa.me/237695227374" class="bg-red-500 hover:shadow-lg hover:bg-red-600 px-4 py-2  text-white rounded-[5px] dark:text-black hidden md:block" target="_blank">contactez-nous</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <main class="mt-[140px] dark:text-white  px-[5%] ">
+        <section class="text-center">
+                <!-- accueil -->
+                <h1 class="font-semibold text-blue-500">Contactez-nous</h1>
+                <p class="text-gray-600 dark:text-gray-400 text-left">
+                    Une équipe d'experts est à votre disposition pour répondre à toutes vos questions et vous aider à trouver la solution d'expédition qui correspond le mieux à vos besoins.
+                </p>
+            </section>
+
+            <section class="mt-6 flex flex-col justify-center items-center gap-2.5  bg-orange-50 dark:bg-orange-200 border dark:text-black border-orange-100 dark:border-orange-400 shrink-0 rounded-2xl px-3.5 py-4 sm:max-w-[500px] sm:mx-auto sm:maxh-[150px] mb-6">
+                <!-- faq -->
+                 <span>⚠️</span>
+                <p>Avant de nous envoyer un message, consultez notre  <a href="faq.html" class="text-blue-500 transition duration-300 ease-in-out transform  hover:text-blue-700 focus:text-yellow-500 hover:underline "> FAQ </a>  pour voir si votre question n'a pas déjà une réponse.</p>
+            </section>
+
+            <section class="mt-3.5 mx-auto flex flex-col gap-6 lg:flex-row lg:gap-[50px] w-full">
+                <!-- formulaire de contact et carte -->
+
+                
+                <div class="  py-6 text-[14px] lg:w-2/3 w-full mx-auto rounded-2xl px-5 bg-blue-50 dark:bg-gray-700 flex flex-col gap-4 ">
+                    <!-- carte -->
+                    <div class="flex gap-1.5 items-center    text-[14px]  ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                        contact rapide
+                    </div>
+                        <span class=" text-[14px]  text-gray-600 dark:text-gray-400">+237695227374</span> <!-- numéro de téléphone -->
+                    <a class="flex gap-1.5 items-center  text-[14px]" href="mailto:Inforion@gmail.com">
+                        <!-- email -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z"/></svg>
+                        Inforion@gmail.com
+                    </a>
+
+                    <div class="flex gap-1.5 items-center  text-[14px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="m352-293 128-76 129 76-34-144 111-95-147-13-59-137-59 137-147 13 112 95-34 144ZM243-144l63-266L96-589l276-24 108-251 108 252 276 23-210 179 63 266-237-141-237 141Zm237-333Z"/></svg>
+                        Dévis gratuit sous 2h
+                    </div>
+                    <div class="flex gap-1.5 items-center  text-[14px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z"/></svg>
+                        Nos bureaux
+                    </div>
+                    <div class="flex flex-col gap-2.5  text-gray-600 dark:text-gray-400">
+                        <!-- nos bureaux -->
+                         <span class="underline">Douala (Cameroun)</span>
+                        <div class="flex gap-1.5 items-center  text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z"/></svg>
+                            Makepe
+                        </div>
+                        <div class="flex gap-1.5 items-center  text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                            Jour ouvrables : 9h-17h
+                        </div>
+                        <div class="flex gap-1.5 items-center  text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <span class=" text-[14px]">+237695227374</span> <!-- numéro de téléphone -->
+                        </div>
+                        <span class="underline">Montreal (Canada)</span>
+                        <div class="flex gap-1.5 items-center   text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M480.21-480Q510-480 531-501.21t21-51Q552-582 530.79-603t-51-21Q450-624 429-602.79t-21 51Q408-522 429.21-501t51 21ZM480-191q119-107 179.5-197T720-549q0-105-68.5-174T480-792q-103 0-171.5 69T240-549q0 71 60.5 161T480-191Zm0 95Q323.03-227.11 245.51-339.55 168-452 168-549q0-134 89-224.5T479.5-864q133.5 0 223 90.5T792-549q0 97-77 209T480-96Zm0-456Z"/></svg>
+                            12 Rue Saint-Catherine 
+                        </div>
+                        <div class="flex gap-1.5 items-center  text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                            Jour ouvrables : 9h-17h
+                        </div>
+                        <div class="flex gap-1.5 items-center  text-[14px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#0000F5"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <span class=" text-[14px]">22020 020020020</span> <!-- numéro de téléphone -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            
+    </main>
+    <footer class=" bg-white dark:bg-gray-800 py-4 mt-[50px] mb-0">
+            <section  class="grid-cols-1 md:grid-cols-2 mb-5  px-[5%] md:gap-[40px] lg:grid-cols-4 lg:gap-4 grid gap-[40px]"> <!--logo, service , reseau sur petit tel il y aura une colonne à parti des tablettes ca sera 2 et sur laptop 4--> 
+                <div class="flex flex-col gap-1.5 items-start"><!-- logo et slogan  et reseaux-->
+                    <!-- logo -->
+                    <a href="index.html" class="cursor-pointer"> <!--retour a la page d'accueil-->
+                        <h4 class="text-base sm:text-base font-bold text-primary ">Orion <span class="text-blue-500">Colis Express</span></h4>
+                    </a>
+                    <div class="text-gray-600 dark:text-gray-400 text-xs w-[95%]"> 
+                        <!-- slogan -->
+                        Marre d'attendre qu'un voyageur sorte ou vienne avant d'envoyer un paquet. c'est fini vous savez maintenant qui contacter.
+                    </div>
+                    <div class="flex gap-4">
+                        <!-- réseaux -->
+                        <a href="https://www.tiktok.com/@starkindustrie65?_t=ZM-90G0tmtFxRA&_r=1" target="_blank" class="p-2 inline-flex justify-center hover:bg-blue-400/20 hover:backdrop-blur-sm rounded" title="Orion colis Expres">
+                            <!-- tiktok -->
+                            <svg width="18px" height="18px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8.45095 19.7926C8.60723 18.4987 9.1379 17.7743 10.1379 17.0317C11.5688 16.0259 13.3561 16.5948 13.3561 16.5948V13.2197C13.7907 13.2085 14.2254 13.2343 14.6551 13.2966V17.6401C14.6551 17.6401 12.8683 17.0712 11.4375 18.0775C10.438 18.8196 9.90623 19.5446 9.7505 20.8385C9.74562 21.5411 9.87747 22.4595 10.4847 23.2536C10.3345 23.1766 10.1815 23.0889 10.0256 22.9905C8.68807 22.0923 8.44444 20.7449 8.45095 19.7926ZM22.0352 6.97898C21.0509 5.90039 20.6786 4.81139 20.5441 4.04639H21.7823C21.7823 4.04639 21.5354 6.05224 23.3347 8.02482L23.3597 8.05134C22.8747 7.7463 22.43 7.38624 22.0352 6.97898ZM28 10.0369V14.293C28 14.293 26.42 14.2312 25.2507 13.9337C23.6179 13.5176 22.5685 12.8795 22.5685 12.8795C22.5685 12.8795 21.8436 12.4245 21.785 12.3928V21.1817C21.785 21.6711 21.651 22.8932 21.2424 23.9125C20.709 25.246 19.8859 26.1212 19.7345 26.3001C19.7345 26.3001 18.7334 27.4832 16.9672 28.28C15.3752 28.9987 13.9774 28.9805 13.5596 28.9987C13.5596 28.9987 11.1434 29.0944 8.96915 27.6814C8.49898 27.3699 8.06011 27.0172 7.6582 26.6277L7.66906 26.6355C9.84383 28.0485 12.2595 27.9528 12.2595 27.9528C12.6779 27.9346 14.0756 27.9528 15.6671 27.2341C17.4317 26.4374 18.4344 25.2543 18.4344 25.2543C18.5842 25.0754 19.4111 24.2001 19.9423 22.8662C20.3498 21.8474 20.4849 20.6247 20.4849 20.1354V11.3475C20.5435 11.3797 21.2679 11.8347 21.2679 11.8347C21.2679 11.8347 22.3179 12.4734 23.9506 12.8889C25.1204 13.1864 26.7 13.2483 26.7 13.2483V9.91314C27.2404 10.0343 27.7011 10.0671 28 10.0369Z" fill="#EE1D52"></path> <path d="M26.7009 9.91314V13.2472C26.7009 13.2472 25.1213 13.1853 23.9515 12.8879C22.3188 12.4718 21.2688 11.8337 21.2688 11.8337C21.2688 11.8337 20.5444 11.3787 20.4858 11.3464V20.1364C20.4858 20.6258 20.3518 21.8484 19.9432 22.8672C19.4098 24.2012 18.5867 25.0764 18.4353 25.2553C18.4353 25.2553 17.4337 26.4384 15.668 27.2352C14.0765 27.9539 12.6788 27.9357 12.2604 27.9539C12.2604 27.9539 9.84473 28.0496 7.66995 26.6366L7.6591 26.6288C7.42949 26.4064 7.21336 26.1717 7.01177 25.9257C6.31777 25.0795 5.89237 24.0789 5.78547 23.7934C5.78529 23.7922 5.78529 23.791 5.78547 23.7898C5.61347 23.2937 5.25209 22.1022 5.30147 20.9482C5.38883 18.9122 6.10507 17.6625 6.29444 17.3494C6.79597 16.4957 7.44828 15.7318 8.22233 15.0919C8.90538 14.5396 9.6796 14.1002 10.5132 13.7917C11.4144 13.4295 12.3794 13.2353 13.3565 13.2197V16.5948C13.3565 16.5948 11.5691 16.028 10.1388 17.0317C9.13879 17.7743 8.60812 18.4987 8.45185 19.7926C8.44534 20.7449 8.68897 22.0923 10.0254 22.991C10.1813 23.0898 10.3343 23.1775 10.4845 23.2541C10.7179 23.5576 11.0021 23.8221 11.3255 24.0368C12.631 24.8632 13.7249 24.9209 15.1238 24.3842C16.0565 24.0254 16.7586 23.2167 17.0842 22.3206C17.2888 21.7611 17.2861 21.1978 17.2861 20.6154V4.04639H20.5417C20.6763 4.81139 21.0485 5.90039 22.0328 6.97898C22.4276 7.38624 22.8724 7.7463 23.3573 8.05134C23.5006 8.19955 24.2331 8.93231 25.1734 9.38216C25.6596 9.61469 26.1722 9.79285 26.7009 9.91314Z" fill="#000000"></path> <path d="M4.48926 22.7568V22.7594L4.57004 22.9784C4.56076 22.9529 4.53074 22.8754 4.48926 22.7568Z" fill="#69C9D0"></path> <path d="M10.5128 13.7916C9.67919 14.1002 8.90498 14.5396 8.22192 15.0918C7.44763 15.7332 6.79548 16.4987 6.29458 17.354C6.10521 17.6661 5.38897 18.9168 5.30161 20.9528C5.25223 22.1068 5.61361 23.2983 5.78561 23.7944C5.78543 23.7956 5.78543 23.7968 5.78561 23.798C5.89413 24.081 6.31791 25.0815 7.01191 25.9303C7.2135 26.1763 7.42963 26.4111 7.65924 26.6334C6.92357 26.1457 6.26746 25.5562 5.71236 24.8839C5.02433 24.0451 4.60001 23.0549 4.48932 22.7626C4.48919 22.7605 4.48919 22.7584 4.48932 22.7564V22.7527C4.31677 22.2571 3.95431 21.0651 4.00477 19.9096C4.09213 17.8736 4.80838 16.6239 4.99775 16.3108C5.4985 15.4553 6.15067 14.6898 6.92509 14.0486C7.608 13.4961 8.38225 13.0567 9.21598 12.7484C9.73602 12.5416 10.2778 12.3891 10.8319 12.2934C11.6669 12.1537 12.5198 12.1415 13.3588 12.2575V13.2196C12.3808 13.2349 11.4148 13.4291 10.5128 13.7916Z" fill="#69C9D0"></path> <path d="M20.5438 4.04635H17.2881V20.6159C17.2881 21.1983 17.2881 21.76 17.0863 22.3211C16.7575 23.2167 16.058 24.0253 15.1258 24.3842C13.7265 24.923 12.6326 24.8632 11.3276 24.0368C11.0036 23.823 10.7187 23.5594 10.4844 23.2567C11.5962 23.8251 12.5913 23.8152 13.8241 23.341C14.7558 22.9821 15.4563 22.1734 15.784 21.2774C15.9891 20.7178 15.9864 20.1546 15.9864 19.5726V3H20.4819C20.4819 3 20.4315 3.41188 20.5438 4.04635ZM26.7002 8.99104V9.9131C26.1725 9.79263 25.6609 9.61447 25.1755 9.38213C24.2352 8.93228 23.5026 8.19952 23.3594 8.0513C23.5256 8.1559 23.6981 8.25106 23.8759 8.33629C25.0192 8.88339 26.1451 9.04669 26.7002 8.99104Z" fill="#69C9D0"></path> </g></svg>
+                        </a>
+                        <a href="https://wa.me/237695227374?text=Bonjour%20et%20bienvenue%20chez%20ORION%20Colis%20Express.%20Nous%20vous%20accompagnons%20dans%20vos%20exp%C3%A9ditions%20depuis%20le%20Cameroun%20vers%20le%20monde%20entier.%20Service%20premium%20avec%20suivi%20en%20temps%20r%C3%A9el%2C%20assurance%20incluse%20et%20livraison%20garantie.%20Pour%20obtenir%20votre%20devis%20express%2C%20merci%20de%20pr%C3%A9ciser%20%3A%20le%20type%20de%20marchandise%2C%20le%20pays%20de%20destination%2C%20et%20le%20mode%20de%20transport%20souhait%C3%A9.%20Notre%20%C3%A9quipe%20vous%20r%C3%A9pondra%20dans%20les%20plus%20brefs%20d%C3%A9lais." target="_blank" 
+                            class="p-2 inline-flex justify-center hover:bg-blue-400/20 hover:backdrop-blur-sm rounded" title="Orion colis Expres">
+                            <!-- Whatsapp -->
+                            <svg width="18px" height="18px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier" _mstTextHash="859781" _mstHash="676">  <title _isTranslated="1">Whatsapp-color</title> <desc _isTranslated="1">Créé avec Sketch.</desc>  <defs _isTranslated="1">  </defs>  <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" _isTranslated="1">  <g id="Color-" transform="translate(-700.000000, -360.000000)" fill="#67C15E" _isTranslated="1">  <path d="M723.993033,360 C710.762252,360 700,370.765287 700,383.999801 C700,389.248451 701.692661,394.116025 704.570026,398.066947 L701.579605,406.983798 L710.804449,404.035539 C714.598605,406.546975 719.126434,408 724.006967,408 C737.237748,408 748,397.234315 748,384.000199 C748,370.765685 737.237748,360.000398 724.006967,360.000398 L723.993033,360.000398 L723.993033,360 Z M717.29285,372.190836 C716.827488,371.07628 716.474784,371.034071 715.769774,371.005401 C715.529728,370.991464 715.262214,370.977527 714.96564,370.977527 C714.04845,370.977527 713.089462,371.245514 712.511043,371.838033 C711.806033,372.557577 710.056843,374.23638 710.056843,377.679202 C710.056843,381.122023 712.567571,384.451756 712.905944,384.917648 C713.258648,385.382743 717.800808,392.55031 724.853297,395.471492 C730.368379,397.757149 732.00491,397.545307 733.260074,397.27732 C735.093658,396.882308 737.393002,395.527239 737.971421,393.891043 C738.54984,392.25405 738.54984,390.857171 738.380255,390.560912 C738.211068,390.264652 737.745308,390.095816 737.040298,389.742615 C736.335288,389.389811 732.90737,387.696673 732.25849,387.470894 C731.623543,387.231179 731.017259,387.315995 730.537963,387.99333 C729.860819,388.938653 729.198006,389.89831 728.661785,390.476494 C728.238619,390.928051 727.547144,390.984595 726.969123,390.744481 C726.193254,390.420348 724.021298,389.657798 721.340985,387.273388 C719.267356,385.42535 717.856938,383.125756 717.448104,382.434484 C717.038871,381.729275 717.405907,381.319529 717.729948,380.938852 C718.082653,380.501232 718.421026,380.191036 718.77373,379.781688 C719.126434,379.372738 719.323884,379.160897 719.549599,378.681068 C719.789645,378.215575 719.62006,377.735746 719.450874,377.382942 C719.281687,377.030139 717.871269,373.587317 717.29285,372.190836 Z" id="Whatsapp" _isTranslated="1">  </path>  </g>  </g>  </g></svg>
+                        </a>
+                        <a href="#" class="p-2 inline-flex justify-center hover:bg-blue-400/20 hover:backdrop-blur-sm rounded" target="_blank" title="Orion colis Expres">
+                            <!-- email -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#EA3323"><path d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5"><!--les navigateurs du sites-->
+                    <h4 class=" text-red-500 underline">Navigateurs</h4>
+                    <div class=" items-start gap-1 flex-col font-light  flex dark:text-white">
+                        <a href="index.html" class="hover:text-blue-500 cursor-pointer active:text-red-500">Accueil</a>
+                        <a href="service.html" class="hover:text-blue-500 cursor-pointer active:text-red-500">Service</a>
+                        <a href="propos.html" class="hover:text-blue-500 cursor-pointer active:text-red-500" >A-propos</a>
+                        <a href="contact.html" class="hover:text-blue-500 cursor-pointer active:text-red-500">contact</a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5 font-light"><!-- services -->
+                    <h4 class="font-normal text-red-500 underline">Services</h4>
+                    <div class=" items-start gap-1 flex-col font-light  flex dark:text-white">
+                        <div class="flex items-center gap-1.5 hover:text-blue-500 ">
+                            <!-- transport aerien -->
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#0000F5"><path d="m401-130-95-176-176-95 67-68 145 25 97-96-309-133 85-85 372 69 120-120q21-21 51-21t51 21q21 21 21 50.5T809-708L689-588l69 373-85 85-133-309-96 97 25 145-68 67Z"/></svg>
+                            </span>
+                            
+                            Transport aérien
+                        </div>
+                        <div class="flex items-center gap-1.5 hover:text-blue-500 ">
+                            <!-- transport maritime -->
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#0000F5"><path d="M216-96h-80v-72h80q39 0 69-17.5t63-36.5q34 20 63 37t69 17q40 0 69-17t63-37q33 19 63 36.5t69 17.5h80v72h-80q-34 0-61-8.5T612-138q-44 25-71 33.5T480-96q-34 0-61-8.5T348-138q-43 24-71 33t-61 9Zm264-144q-27 0-51.5-9.5T384-278l-36-34-31 31q-20 20-45.5 30.5T218-240h-26l-64-278q-3-14 4.5-26.5T154-561l62-17v-142q0-30 21-51t51-21h96v-72h192v72h96q30 0 51 21t21 51v142l62 17q14 4 21.5 16.5T832-518l-64 278h-26q-28 0-53.5-10.5T643-281l-31-31-36 34q-20 19-44.5 28.5T480-240Zm0-72q13 0 25-5t22-14l86-82 46 51q11 13 24 24t29 19l42-182-274-73-274 73 42 182q16-8 29-19t24-24l46-51 86 82q10 9 22 14t25 5ZM288-597l192-51 192 51v-123H288v123Zm192 154Z"/></svg>
+                            </span>
+                            
+                            Transport maritime
+                        </div>
+                        <div class="flex items-center gap-1.5 hover:text-blue-500 ">
+                            <span class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#0000F5"><path d="M444-189v-270L216-591v270l228 132Zm72 0 228-131v-270L516-459v270Zm-72 84L180-258q-17.1-9.88-26.55-26.06Q144-300.23 144-320v-320q0-19.77 9.45-35.94Q162.9-692.12 180-702l264-153q17.13-10 36.07-10Q499-865 516-855l264 153q17.1 9.88 26.55 26.06Q816-659.77 816-640v320q0 19.77-9.45 35.94Q797.1-267.88 780-258L516-105q-17.13 10-36.07 10Q461-95 444-105Zm188-505 83-47-236-135-80 47 233 135Zm-152 88 82-47-237-134-80 46 235 135Z"/></svg>
+                            </span>
+                            
+                            Formalités douanières
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5 items-start font-light">
+                    <!-- nos contacts -->
+                    <h4 class="font-normal text-red-500 underline">Nous contacter</h4>
+                    <div class="font-light text-[14px] dark:text-white">
+                        <h5 class="font-normal">Douala</h5>
+                        <div class="flex gap-1.5 items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#666666"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <a href="tel:237695227374" class=" text-gray-600 dark:text-gray-400 text-xs">237695227374</a>
+                        </div>
+                    </div>
+                    <div class="font-light ">
+                        <h5 class="font-normal text-[14px] dark:text-white">Paris</h5>
+                        <div class="flex gap-1.5 items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#666666"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <a href="tel:237695227374" class="cursor-pointer text-gray-600 dark:text-gray-400 text-xs">336#########</a>
+                        </div>
+
+                    </div>
+                    <div class="font-light space-y-1.5">
+                        <h5 class="font-normal text-[14px] dark:text-white">Guangzhou</h5>
+                        <div class="flex gap-1.5 items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#666666"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <a href="tel:237695227374" class="cursor-pointer text-gray-600 dark:text-gray-400 text-xs">86#########</a>
+                        </div>
+                        <div class="flex gap-1.5 items-center cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#666666"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                            <a href="tel:237695227374" class="cursor-pointer text-gray-600 dark:text-gray-400 text-xs">861########</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            
+            <hr class=" text-blue-200 px-[5%] h-[1.8px]  ">
+            
+            <section class="px-[5%] flex justify-center my-5  ">
+                <!-- appel d-urgence -->
+                <div class="mx-auto inline-flex justify-center text-center items-center gap-2 md:gap-2.5 rounded-4xl px-[12px] py-[5px] bg-blue-100/30 border border-gray-600 dark:border-gray-100/20 ">
+                    <div class=" flex gap-1 items-center dark:text-white  text-xs">
+                        <span class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#03fc4e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dot-icon lucide-dot"><circle cx="12.1" cy="12.1" r="1"/></svg>
+                        </span>
+                        Service urgence 24h/7
+                    </div>
+                    <div class=" flex gap-1.5 text-gray-600 dark:text-gray-300 text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#666666"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z"/></svg>
+                        +237695227374
+                    </div>
+                </div>
+            </section>
+            <hr class=" text-blue-200 px-[5%] h-[1.8px]  ">
+
+            <section class="px-[5%] text-xs md:text-base  md:flex flex-col gap-4 justify-center items-center my-5">
+                <div class="dark:text-white text-center mb-2.5">
+                    © 2025 Orion colis express. Tous droits réservés.
+                </div>
+                <div class="flex justify-around gap-1.5 md:gap-3">
+                    <a href="#" class="cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 hover:underline" >Mentions légales</a>
+                    <a href="#" class="cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 hover:underline">Politique de confidentialité</a>
+                    <a href="#" class="cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 hover:underline">Conditions générales</a>
+                    <a href="#" class="cursor-pointer text-gray-600 dark:text-gray-300 hover:text-blue-500 hover:underline">CGV</a>
+                </div>
+            </section>
+    </footer>
+</body>
+</html>
