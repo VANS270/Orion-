@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
+@theme
+{
+    /* les couleurs */
+    --color-primary: rgb(255,0,0);
+    --color-secondary: #0084FF;
+    --color-btn: rgb(215 , 32 , 32);
+    --color-modeclair: #F9F9FF; /*le background principal*/
+    --color-mode-dark: #2F2D2E; /*le background en mode dark*/
+
+    /* les polices */
+    --font-roboto:'roboto';
+    --font-Montserrat:'Montserrat';
+
+    /* les tailles des ecrans */
+    --breakpoint-xs: 480px; /* telephone moyen */
+    --breakpoint-xxs: 300px;/* plus petit telephone */
+
+    /* les ombres */
+    
+}
+
+@layer base
+{
+    a{
+        cursor: pointer;
+    }
+    h1, h2, h3, h4
+    {
+        font-family: 'Montserrat';
+    }
+    h1
+    {
+        font-size: 32px;
+    }
+    h2
+    {
+        font-size: 24px;
+    }
+    h3
+    {
+        font-family: 20px;
+    }
+    h4
+    {
+        font-size: 18px;
+    }
+    body
+    {
+        font-family: roboto;
+        /* color: blue; */
+        overflow-x: hidden;
+
+    }
+    option:hover
+    {
+        background-color: white;
+    }
+}
+
+@layer components
+{
+    
+    .false , .menu-burger , .mode-sombre
+    /* retour accueil */
+    {
+        cursor: pointer;
+    }
+    #sidebar
+    {
+        transform: translateX(-100%);
+        opacity:0;
+        pointer-events: auto;
+        transition: all 800ms 100ms linear;
+    }
+    #sidebar.open
+    {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        transition: all 800ms 100ms linear;
+        
+    }
+    .reseau
+    {
+        padding: 8px;
+        display: inline-flex;
+        background-color: blue;
+        
+    }
+    .reseau:hover
+    {
+        opacity: 0.2;
+        backdrop-filter: blur(2px);
+    }
+    .shadow-card
+    {
+        box-shadow: 1px 4px 10px -1px rgba(0, 0, 0, 0.40);
+    }
+}
